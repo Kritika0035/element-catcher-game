@@ -1,0 +1,29 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: green;
+    overflow: hidden;
+}
+
+#scorehelp{
+    text-align: center;
+    font-size: 25px;
+    background-color: red;
+}
+
+#branch{
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: brown;
+    top: 23px;
+}
+

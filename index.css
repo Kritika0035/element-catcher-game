@@ -16,7 +16,8 @@ body{
 #scorehelp{
     text-align: center;
     font-size: 25px;
-    background-color: rgb(255, 58, 68);
+    color: white;
+    background-color: rgb(88, 11, 5);
 }
 
 #branch{
@@ -39,16 +40,16 @@ body{
 }
 
 #hen1{
-    left: 20%;
+    left: 310px;
 }
 
-#hen1{
-    left: 40%;
+ #hen2{
+    left: 610px;
 }
 
-#hen1{
-    left: 60%;
-}
+#hen3{
+    left: 910px;
+} 
 
 .egg{
     position: absolute;
@@ -58,7 +59,6 @@ body{
     background: url(egg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 100;
 }
 
 #egg1{

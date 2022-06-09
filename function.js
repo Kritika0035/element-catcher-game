@@ -11,6 +11,7 @@ function egg_down(egg) {
 function check_egg_hits_floor(egg){
 
     if (collison(egg, floor)){
+        show_bulls_eye(egg);
         return true;
     }
     return false;
@@ -19,3 +20,8 @@ function check_egg_hits_floor(egg){
 function set_egg_to_initial_position(egg){
     egg.css('top', egg_initial_position);
 };
+
+function show_bulls_eye(egg) {
+    bullseye_num = egg.attr('data-bullseye');
+    $('.bullseye' + bullseye_num).show();
+}

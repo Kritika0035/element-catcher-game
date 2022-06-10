@@ -76,12 +76,13 @@ body{
 .bullseye{
     display: none;
     position: absolute;
-    bottom: 0%;
-    height: 7%;
-    width: 7%;
+    bottom: 20px;
+    height: 30px;
+    width: 80px;
     background: url(broken\ egg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 90;
 }
 
 #bullseye1{
@@ -108,12 +109,12 @@ body{
     height: 150px;
     width: 150px;
     position: absolute;
-    bottom: 5px;
-    background: url(basket.png);
+    bottom: 0px;
+    background: url(basketjpg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    z-index: 11;
+    z-index: 100;
 }
 
 #score_1{

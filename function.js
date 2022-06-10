@@ -39,7 +39,7 @@ function decreament_life() {
     life_span.text('Life:' + ' ' + life);
 };
 
-function check_egg_hits_basket(egg1) {
+function check_egg_hits_basket(egg) {
     if (collison(egg, basket)) {
         egg_top = parseInt(egg.css('top'));
         if (egg_top < basket_top){
@@ -52,6 +52,18 @@ function check_egg_hits_basket(egg1) {
 
 function update_score() {
     score++;
+    if (score %10 ==0 && speed <= max_speed){
+        speed++;
+    }
     score_span.text('Score:' + ' ' + score);
     score1.text(score);
-}
+};
+
+function stop_the_game() {
+    cancelAnimationFrame(anim_id);
+    restart.slidedown();
+};
+
+restart.click(function() {
+    location.reload();
+});
